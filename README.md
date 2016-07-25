@@ -49,7 +49,7 @@ router.map({
 router.start(...) // start
 
 ...(ignore lines of codes)
-
+```
 
 **NOTE:**
 > `VueDocTitle.wrap` must be invoked before `router.start`
