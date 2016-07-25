@@ -1,3 +1,38 @@
+# =========================
+# Operating System Files
+# =========================
+
+# windows
+# =========================
+Thumbs.db
+ehthumbs.db
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# mac 
+._.DS_Store
+.DS_Store
+
+# OSX
+# =========================
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must ends with two \r.
+Icon
+
+# Thumbnails
+._*
+
+
 # Logs
 logs
 *.log

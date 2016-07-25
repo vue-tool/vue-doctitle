@@ -1,0 +1,36 @@
+{
+  "name": "vue-doctitle",
+  "version": "0.0.1",
+  "description": "Simple plugin for switching document title on transitions between routes (for VueRouter)",
+  "main": "src/vue-doctitle.js",
+  "scripts": {
+    "dev": "echo 'dev'",
+    "build": "echo 'build'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vue-tool/vue-doctitle.git"
+  },
+  "keywords": [
+    "vue",
+    "vuejs",
+    "title",
+    "page title",
+    "document title"
+  ],
+  "author": {
+    "name": "bblue000",
+    "email": "574879667@qq.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vue-tool/vue-doctitle/issues"
+  },
+  "homepage": "https://github.com/vue-tool/vue-doctitle#readme",
+  "maintainers": [
+    {
+      "name": "Yin Yong",
+      "email": "574879667@qq.com"
+    }
+  ]
+}
