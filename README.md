@@ -35,12 +35,13 @@ import VueDocTitle from 'vue-doctitle'
 var router = new VueRouter({
 	// your set of options
 })
-VueDocTitle.wrap(router, { defTitle: 'my app' }) // defTitle in param 2, means default title if not set in any routes
+// defTitle in param 2, means default title if not set in any routes
+VueDocTitle.wrap(router, { defTitle: 'my app' })
 router.map({
 	'': {
     	component: Index
     },
-    'a': {
+    '/a': {
     	component: A,
     	doctitle: 'my app - component a' // special document title of component A
     }
@@ -72,7 +73,7 @@ Vue.use(VueDocTitle)
 
 #### use directive in page components
 
-1. dynamic (bind prop or data)
+1.dynamic (bind prop or data)
 
 ```html
 <template>
@@ -81,7 +82,7 @@ Vue.use(VueDocTitle)
 </template>
 ```
 
-2. literal
+2.literal
 
 ```html
 <template>
