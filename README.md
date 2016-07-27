@@ -36,7 +36,8 @@ var router = new VueRouter({
 	// your set of options
 })
 // defTitle in param 2, means default title if not set in any routes
-VueDocTitle.wrap(router, { defTitle: 'my app' })
+// filter in param 2, means to filter titles as you want
+VueDocTitle.wrap(router, { defTitle: 'my app', filter: function (title) { return 'my app - ' + title } })
 router.map({
 	'': {
     	component: Index
