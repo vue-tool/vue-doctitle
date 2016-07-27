@@ -2,7 +2,7 @@
   "name": "vue-doctitle",
   "version": "0.0.3",
   "description": "Simple plugin for switching document title on transitions between routes (for VueRouter)",
-  "main": "src/vue-doctitle.js",
+  "main": "dist/vue-doctitle.js",
   "scripts": {
     "dev": "echo 'dev'",
     "build": "node build/build.js"

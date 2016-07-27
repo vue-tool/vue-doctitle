@@ -1,5 +1,5 @@
 /**
- * vue-doctitle v0.0.2
+ * vue-doctitle v0.0.3
  * (c) 2016 bblue000
  * https://github.com/vue-tool/vue-doctitle
  * Released under the MIT License.
@@ -24,6 +24,12 @@
       console.error('[vue-doctitle] ' + msg);
     }
   }
+  function info(msg) {
+    /* istanbul ignore next */
+    if (typeof console !== 'undefined') {
+      console.log('[vue-doctitle] ' + msg);
+    }
+  }
 
   var VueDocTitle = (function () {
     function VueDocTitle() {
@@ -43,10 +49,8 @@
         var title = transition.to.doctitle;
         if (title && filter) {
           title = filter(title);
-        } else {
-          title = defTitle;
         }
-        document.title = title;
+        document.title = title || defTitle;
       });
       return router;
     };
@@ -69,7 +73,7 @@
       update: function update(newValue, oldValue) {
         // 值更新时的工作
         // 也会以初始值为参数调用一次
-        console.log('v-doctitle = ' + newValue);
+        info('v-doctitle = ' + newValue);
         document.title = newValue;
       },
       unbind: function unbind() {
